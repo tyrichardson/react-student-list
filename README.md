@@ -16,7 +16,7 @@ Between the server, client and mongo, you'll need three terminal tabs!
 
 ## BASE MODE
 
-- Use `Axios` to submit save form data to the database by posting data to `students/`.
+- Use `Axios` to submit save form data to the database by posting data to `/students`.
 - Retrieve the user list and store it in the `App.js`. Create a new **component** called `StudentList.js` and pass it the data. 
 - Display the students in a table on the DOM.
 - Update the user list each time a new user is added to the database.
