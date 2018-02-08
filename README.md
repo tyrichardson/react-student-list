@@ -1,6 +1,6 @@
 # REACT GITHUB STUDENT LIST
 
-Before you get started make sure to look through the code that has been provided. Server side code to `GET` and `POST` a GitHub user has been proviced for you. There is also a form in a **component** (`components/StudentForm/StudentForm.js`) that passes data entered by the user back to `App.js`. You should not need to modify the StudentForm **component**.
+Before you get started make sure to look through the code that has been provided. Server side code to `GET` and `POST` a GitHub user has been provided for you. There is also a form in a **component** (`components/StudentForm/StudentForm.js`) that passes data entered by the user back to `App.js`. You should not need to modify the StudentForm **component**.
 
 ### Setup
 
