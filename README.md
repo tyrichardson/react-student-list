@@ -36,8 +36,20 @@ Between the server, client and mongo, you'll need three terminal tabs! Because w
 
 - Add a **More Details** button for each user. When the button is clicked on, pass the selected user back to `App.js`.
 - Make a request to the GitHub API to retrieve more details about the user. Create a new **component** on the page that displays those details.
-   - `https://api.github.com/users/GITHUB_USERNAME`
+   - `https://api.github.com/users/GITHUB_USERNAME?access_token=913f20e25e454b699cbf7b4d5f3ae7fd516cafc4`
 - Create a new **component** that renders each individual list item in the user list.
+
+**GitHub Rate Limit**
+
+There is a rate limit to the number of requests allowed by GitHub (50 per hour from an IP address). If you begin to get `403` status errors, you may want to try using our access token which will bump up to 5000 per hour:
+
+```
+https://api.github.com/users/GITHUB_USERNAME?access_token=913f20e25e454b699cbf7b4d5f3ae7fd516cafc4
+```
+
+If your cohort burns through that, try creating your own access token:
+
+https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/
 
 ### Hard Mode Wireframe
 
