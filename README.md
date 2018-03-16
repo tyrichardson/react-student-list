@@ -39,9 +39,9 @@ Between the server, client and mongo, you'll need three terminal tabs! Because w
    - `https://api.github.com/users/GITHUB_USERNAME?access_token=913f20e25e454b699cbf7b4d5f3ae7fd516cafc4`
 - Create a new **component** that renders each individual list item in the user list.
 
-**GitHub Rate Limit**
+### GitHub Rate Limit
 
-There is a rate limit to the number of requests allowed by GitHub (50 per hour from an IP address). If you begin to get `403` status errors, you may want to try using our access token which will bump up to 5000 per hour:
+GitHub doesn't like it when malicious users pummel their API with an absurd ammount of requests. Unfortunately, there's not a great way to tell who is malicious and who is not, so there is a rate limit to the number of requests allowed by GitHub (50 per hour from an IP address). You can increase that limit with a GitHub access token (pretty common among APIs). If you begin to get `403` status errors, you may want to try using our access token which will bump you up to 5000 requests per hour:
 
 ```
 https://api.github.com/users/GITHUB_USERNAME?access_token=913f20e25e454b699cbf7b4d5f3ae7fd516cafc4
