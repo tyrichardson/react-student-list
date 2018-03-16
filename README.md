@@ -1,22 +1,29 @@
-# REACT GITHUB STUDENT LIST
+# React GitHub Student List
 
 Before you get started make sure to look through the code that has been provided. Server side code to `GET` and `POST` a GitHub user has been provided for you. There is also a form in a **component** (`components/StudentForm/StudentForm.js`) that passes data entered by the user back to `App.js`. You should not need to modify the StudentForm **component**.
 
 ### Setup
 
-Start mongo if you haven't already with `mongod`. Running the server code requires `nodemon`. 
+Start mongo if you haven't already with `mongod`. Running the server code requires `nodemon`. If you don't already have `nodemon`, install it globally with `npm install nodemon --global`.
 
 ```
 npm install
 npm run server
+```
+
+Now that the server is running, open a new tab with `cmd + t` and start the react client app.
+
+```
 npm run client
 ```
 
-Between the server, client and mongo, you'll need three terminal tabs!
+Between the server, client and mongo, you'll need three terminal tabs! Because we're using `nodemon` and `create-react-app`, both our client side and server side will automatically spin back up when changes are made!
+
+> Note: You may also start mongo with `brew services start mongodb`, in that case, you will only need two terminal tabs.
 
 ## BASE MODE
 
-- Use `Axios` to submit save form data to the database by posting data to `/students`.
+- Use `axios` to submit and save form data to the database by posting data to `/students`.
 - Retrieve the user list and store it in the `App.js`. Create a new **component** called `StudentList.js` and pass it the data. 
 - Display the students in a table on the DOM.
 - Update the user list each time a new user is added to the database.

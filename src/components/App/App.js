@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './App.css';
-import StudentForm from './components/StudentForm/StudentForm';
+import StudentForm from '../StudentForm/StudentForm';
 
 class App extends Component {
   constructor() {
