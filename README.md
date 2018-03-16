@@ -59,7 +59,7 @@ https://help.github.com/articles/creating-a-personal-access-token-for-the-comman
 
 - Add a button to **delete** a user from the list. This will require both UI changes and a new route.
 - It's pretty weird that details and a broken image are showing up right away because we don't have a default user. Use [react conditional rendering](https://reactjs.org/docs/conditional-rendering.html) to only show the details section if there is a selected user.
-- Add syling to your components.
+- Add styling to your components.
 - Repeat over the users followers and display them below the selected users profile information.
 
 No wireframe for pro mode.
