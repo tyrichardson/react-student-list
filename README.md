@@ -32,7 +32,7 @@ Between the server, client and mongo, you'll need three terminal tabs! Because w
 - [ ] Display the students in a table on the DOM.
       - [x] JSON.stringify on DOM
       - [x] loop with .map; display in ul on DOM
-- [ ] Update the user list each time a new user is added to the database.
+- [x] Update the user list each time a new user is added to the database.
 
 ### Base Mode Wireframe
 

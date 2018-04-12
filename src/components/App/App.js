@@ -17,6 +17,7 @@ class App extends Component {
     // Give our function access to `this`
     this.addStudent = this.addStudent.bind(this);
     this.getStudent = this.getStudent.bind(this);
+
   }
 
   componentDidMount() {
@@ -36,7 +37,7 @@ class App extends Component {
         this.setState({
           studentList: response.data
         });
-        console.log('studentList array in STATE from response', this.state.studentList);
+        console.log('studentList array in STATE from GET response', this.state.studentList);
       }).catch((error) => {
         console.log('error sent back from POST', error)
       });
@@ -44,7 +45,7 @@ class App extends Component {
 
   // This function is called by the StudentForm when the submit button is pressed
   addStudent(newStudent) {
-    console.log(newStudent);
+    console.log('new student added in input newStudent', newStudent);
     // POST your data here
     axios({
       method: 'POST',
@@ -53,23 +54,28 @@ class App extends Component {
     })
     .then( (response) => {
       console.log('response sent back from POST', response);
-      this.setState({
-        studentList: response.data
-      });
+      this.getStudent();
     }).catch( (error) => {
       console.log('error sent back from POST', error)
     });
-    this.getStudent();
   }
 
   render() {
     return (
       <div className="App">
+
         <header className="App-header">
           <h1 className="App-title">GitHub Student List</h1>
         </header>
+
         <br/>
+
         <StudentForm addStudent={this.addStudent}/>
+
+        <p>Student List:</p>
+        {/* This next line connects the component to this App.js page */}
+          <StudentList studentList={this.state.studentList}/>
+      
       </div>
     );
   }
