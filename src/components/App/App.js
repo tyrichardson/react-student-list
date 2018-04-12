@@ -2,13 +2,16 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import './App.css';
 import StudentForm from '../StudentForm/StudentForm';
+import StudentList from '../StudentList/StudentList';
 
 class App extends Component {
   constructor(props) {
     super(props);
     // Keep track of the student list
     this.state = {
-      studentList: [],
+      studentList: [
+       { id: '', github: ''}
+      ],
     };
 
     // Give our function access to `this`
@@ -39,7 +42,6 @@ class App extends Component {
       });
   }
 
-
   // This function is called by the StudentForm when the submit button is pressed
   addStudent(newStudent) {
     console.log(newStudent);
@@ -68,8 +70,6 @@ class App extends Component {
         </header>
         <br/>
         <StudentForm addStudent={this.addStudent}/>
-
-        <p>Student list goes here.</p>
       </div>
     );
   }

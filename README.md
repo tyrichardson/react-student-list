@@ -23,13 +23,15 @@ Between the server, client and mongo, you'll need three terminal tabs! Because w
 
 ## BASE MODE
 
-- [ ] Use `axios` to submit and save form data to the database by posting data to `/students`.
+- [x] Use `axios` to submit and save form data to the database by posting data to `/students`.
       - [x] review server side code
 - [x] Retrieve the user list and store it in the `App.js`.
-      - [ ] GET route
-      - [ ] assign data to array in STATE
+      - [x] GET route
+      - [x] assign data to array in STATE
 - [ ] Create a new **component** called `StudentList.js` and pass it the data.
 - [ ] Display the students in a table on the DOM.
+      - [x] JSON.stringify on DOM
+      - [x] loop with .map; display in ul on DOM
 - [ ] Update the user list each time a new user is added to the database.
 
 ### Base Mode Wireframe
