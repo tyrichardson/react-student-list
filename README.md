@@ -55,7 +55,7 @@ https://help.github.com/articles/creating-a-personal-access-token-for-the-comman
 
 ![Hard Mode Wireframe](wireframes/hard_mode.png)
 
-## PRO MODE
+## STRETCH GOALS
 
 - Add a button to **delete** a user from the list. This will require both UI changes and a new route.
 - It's pretty weird that details and a broken image are showing up right away because we don't have a default user. Use [react conditional rendering](https://reactjs.org/docs/conditional-rendering.html) to only show the details section if there is a selected user.
