@@ -28,8 +28,8 @@ Between the server, client and mongo, you'll need three terminal tabs! Because w
 - [x] Retrieve the user list and store it in the `App.js`.
       - [x] GET route
       - [x] assign data to array in STATE
-- [ ] Create a new **component** called `StudentList.js` and pass it the data.
-- [ ] Display the students in a table on the DOM.
+- [x] Create a new **component** called `StudentList.js` and pass it the data (via props.
+- [x] Display the students in a table on the DOM.
       - [x] JSON.stringify on DOM
       - [x] loop with .map; display in ul on DOM
 - [x] Update the user list each time a new user is added to the database.

@@ -5,15 +5,22 @@ class StudentList extends Component {
     return (
       <div>
 
-        <ul>
-          {
-            this.props.studentList.map(student => {
+       <table>
+         <thead>
+         <tr>
+         <th>Saved GitHub User</th>
+         </tr>
+         </thead>
+         <tbody>
+            {
+              this.props.studentList.map(student => {
                return (
-               <li key={student._id}>{student.github}</li>
+               <tr key={student._id}>{student.github}</tr>
                )  
               })
-          }
-        </ul>
+              }
+          </tbody>
+        </table>
 
       </div>
     )

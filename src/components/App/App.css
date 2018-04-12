@@ -21,3 +21,27 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+table {
+  table-layout: auto;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td,
+tr {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: silver
+}
+
+tr:nth-child(even) {
+  background-color: slategray
+}
