@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Button from 'material-ui/Button';
+
 
 class StudentListItem extends Component {
 
@@ -25,7 +27,7 @@ class StudentListItem extends Component {
         <div>
         <li><img src={imagePath} />
         {this.props.student.github}
-        <button onClick={this.handleShow}>Hide</button>
+        <Button onClick={this.handleShow}>Hide</Button>
         </li>
         <br />
         </div>
@@ -34,7 +36,7 @@ class StudentListItem extends Component {
       //DONT RENDER THE NORMAL THING
       listItem = (
         <li>{this.props.student.github}
-        <button onClick={this.handleShow}>Show</button>
+        <Button onClick={this.handleShow}>Show</Button>
         </li>
       )
     }

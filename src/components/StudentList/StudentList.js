@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import StudentListItem from '../StudentList/StudentListItem/StudentListItem.js'
+import 'typeface-roboto'
 
 class StudentList extends Component {
 
@@ -12,8 +13,7 @@ class StudentList extends Component {
           handleGetMoreInfo={this.props.handleGetMoreInfo}/>
       )
     });
-
-
+ 
     return (
       <ul>
         {students}

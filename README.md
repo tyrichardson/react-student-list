@@ -2,14 +2,14 @@ W6D4-React GitHub User List Part 2
 
 Use the code from your GitHub User List or fork the lecture repository as a starting point. Add the following features to your project:
 
-- [ ] Display a 50px by 50px profile picture to the left of every user in the list
-- [ ] Include a Hide Image button to the right of ever user user in the list
-- [ ] When the Hide Image button is clicked...
-- [ ] Hide the thumbnail image for that user
-- [ ] Switch the text of the button to Show Image
-- [ ] When the Show Image button is clicked
-- [ ] Show the thumbnail image for that user
-- [ ]Switch the text of the button to Hide Image
+- [x] Display a 50px by 50px profile picture to the left of every user in the list
+- [x] Include a Hide Image button to the right of ever user user in the list
+- [x] When the Hide Image button is clicked...
+- [x] Hide the thumbnail image for that user
+- [x] Switch the text of the button to Show Image
+- [x] When the Show Image button is clicked
+- [x] Show the thumbnail image for that user
+- [x]Switch the text of the button to Hide Image
 
 NOTE: No server side code required for this.
 
@@ -59,7 +59,8 @@ Between the server, client and mongo, you'll need three terminal tabs! Because w
 
 - [x] Add a **More Details** button for each user.
 - [x] When the button is clicked on, pass the selected user back to `App.js`.
-- [ ] Make a request to the GitHub API to retrieve more details about the user. - [ ] Create a new **component** on the page that displays those details.
+- [ ] Make a request to the GitHub API to retrieve more details about the user.
+- [ ] Create a new **component** on the page that displays those details.
        `https://api.github.com/users/GITHUB_USERNAME?access_token=913f20e25e454b699cbf7b4d5f3ae7fd516cafc4`
 - [ ] Create a new **component** that renders each individual list item in the user list.
 
