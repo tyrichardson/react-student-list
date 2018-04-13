@@ -22,6 +22,10 @@
   to { transform: rotate(360deg); }
 }
 
+ul {
+  list-style-type: none;
+}
+
 table {
   table-layout: auto;
   width: 100%;

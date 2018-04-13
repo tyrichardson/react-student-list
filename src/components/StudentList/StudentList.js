@@ -1,35 +1,25 @@
 import React, { Component } from 'react';
+import StudentListItem from '../StudentList/StudentListItem/StudentListItem.js'
 
 class StudentList extends Component {
+
   render() {
+    let students = this.props.studentList.map((student) => {
+      return (
+        <StudentListItem
+          key={student._id}
+          student={student}
+          handleGetMoreInfo={this.props.handleGetMoreInfo}/>
+      )
+    });
+
+
     return (
-      <div>
-
-       <table>
-         <thead>
-         <tr>
-         <th>Saved GitHub User</th>
-         <th>Action</th>
-         </tr>
-         </thead>
-         <tbody>
-            {
-              this.props.studentList.map(student => {
-               return (
-               <tr>
-               <td key={student._id}>{student.github}</td>
-               <td><button>Get More Info</button> </td>
-              </tr>
-               )  
-              })
-              }
-          </tbody>
-        </table>
-
-      </div>
+      <ul>
+        {students}
+      </ul>
     )
   }
-  }
-
+}
 
 export default StudentList;

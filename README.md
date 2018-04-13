@@ -1,3 +1,20 @@
+W6D4-React GitHub User List Part 2
+
+Use the code from your GitHub User List or fork the lecture repository as a starting point. Add the following features to your project:
+
+- [ ] Display a 50px by 50px profile picture to the left of every user in the list
+- [ ] Include a Hide Image button to the right of ever user user in the list
+- [ ] When the Hide Image button is clicked...
+- [ ] Hide the thumbnail image for that user
+- [ ] Switch the text of the button to Show Image
+- [ ] When the Show Image button is clicked
+- [ ] Show the thumbnail image for that user
+- [ ]Switch the text of the button to Hide Image
+
+NOTE: No server side code required for this.
+
+
+
 # React GitHub Student List
 
 Before you get started make sure to look through the code that has been provided. Server side code to `GET` and `POST` a GitHub user has been provided for you. There is also a form in a **component** (`components/StudentForm/StudentForm.js`) that passes data entered by the user back to `App.js`. You should not need to modify the StudentForm **component**.
@@ -40,12 +57,11 @@ Between the server, client and mongo, you'll need three terminal tabs! Because w
 
 ## HARD MODE
 
-- [ ] Add a **More Details** button for each user.
-- [ ] When the button is clicked on, pass the selected user back to `App.js`.
-
-- Make a request to the GitHub API to retrieve more details about the user. Create a new **component** on the page that displays those details.
-   - `https://api.github.com/users/GITHUB_USERNAME?access_token=913f20e25e454b699cbf7b4d5f3ae7fd516cafc4`
-- Create a new **component** that renders each individual list item in the user list.
+- [x] Add a **More Details** button for each user.
+- [x] When the button is clicked on, pass the selected user back to `App.js`.
+- [ ] Make a request to the GitHub API to retrieve more details about the user. - [ ] Create a new **component** on the page that displays those details.
+       `https://api.github.com/users/GITHUB_USERNAME?access_token=913f20e25e454b699cbf7b4d5f3ae7fd516cafc4`
+- [ ] Create a new **component** that renders each individual list item in the user list.
 
 ### GitHub Rate Limit
 
