@@ -9,13 +9,17 @@ class StudentList extends Component {
          <thead>
          <tr>
          <th>Saved GitHub User</th>
+         <th>Action</th>
          </tr>
          </thead>
          <tbody>
             {
               this.props.studentList.map(student => {
                return (
-               <tr key={student._id}>{student.github}</tr>
+               <tr>
+               <td key={student._id}>{student.github}</td>
+               <td><button>Get More Info</button> </td>
+              </tr>
                )  
               })
               }

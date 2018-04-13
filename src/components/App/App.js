@@ -14,15 +14,32 @@ class App extends Component {
       ],
     };
 
-    // Give our function access to `this`
-    this.addStudent = this.addStudent.bind(this);
-    this.getStudent = this.getStudent.bind(this);
+    // Give our function access to `this`; used arrow functions, so this is not necessary
+    // this.addStudent = this.addStudent.bind(this);
+    // this.getStudent = this.getStudent.bind(this);
 
   }
 
   componentDidMount() {
     console.log('componentDidMount');
     this.getStudent();
+  }
+
+  // This function is called by the StudentForm when the submit button is pressed
+  addStudent(newStudent) {
+    console.log('new student added in input newStudent', newStudent);
+    // POST your data here
+    axios({
+      method: 'POST',
+      url: '/students',
+      data: newStudent
+    })
+      .then((response) => {
+        console.log('response sent back from POST', response);
+        this.getStudent();
+      }).catch((error) => {
+        console.log('error sent back from POST', error)
+      });
   }
 
   // GET data here
@@ -41,23 +58,6 @@ class App extends Component {
       }).catch((error) => {
         console.log('error sent back from POST', error)
       });
-  }
-
-  // This function is called by the StudentForm when the submit button is pressed
-  addStudent(newStudent) {
-    console.log('new student added in input newStudent', newStudent);
-    // POST your data here
-    axios({
-      method: 'POST',
-      url: '/students',
-      data: newStudent
-    })
-    .then( (response) => {
-      console.log('response sent back from POST', response);
-      this.getStudent();
-    }).catch( (error) => {
-      console.log('error sent back from POST', error)
-    });
   }
 
   render() {
